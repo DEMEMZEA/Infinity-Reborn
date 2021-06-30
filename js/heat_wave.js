@@ -36,11 +36,11 @@ const HEATWAVE = {
     effDesc: [
         (x=HEATWAVE.effect(0)) => { return `divides wavelength by <span class='cold'>${format(x.wave)}</span>, 
         multiples speed by <span class='cold'>${format(x.speed)}</span>, 
-        make neutral upgrades is <span class='cold'>${format(x.nu.sub(1).mul(100))}%</span> weaker` },
+        makes neutral upgrades <span class='cold'>${format(x.nu.sub(1).mul(100))}%</span> weaker` },
 
         (x=HEATWAVE.effect(1)) => { return `multiples wavelength by <span class='hot'>${format(x.wave)}</span>, 
         divides speed by <span class='hot'>${format(x.speed)}</span>, 
-        make neutral upgrades is <span class='hot'>${format(x.nu.sub(1).mul(100))}%</span> stronger` },
+        makes neutral upgrades <span class='hot'>${format(x.nu.sub(1).mul(100))}%</span> stronger` },
     ],
 }
 
